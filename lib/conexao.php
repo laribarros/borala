@@ -1,23 +1,17 @@
 <?php
 if(!class_exists('Conexao')) {
-
     //BANCO DE DADOS
-    /*DEFINE('BANCO', 'localhost'); 
-    DEFINE('DATA_BASE', 'borala');
-    DEFINE('USUARIO', 'root');
-    DEFINE('SENHA', '');*/
-
-    DEFINE('BANCO', 'borala-do-user-14507995-0.b.db.ondigitalocean.com'); 
-    DEFINE('DATA_BASE', 'borala');
-    DEFINE('USUARIO', 'doadmin');
-    DEFINE('SENHA', 'AVNS_0NhZB_mZTjyUjasTOTx');
-    DEFINE('PORTA', '25060');
+    DEFINE('BANCO', ''); 
+    DEFINE('DATA_BASE', '');
+    DEFINE('USUARIO', '');
+    DEFINE('SENHA', '');
+    DEFINE('PORTA', '');
 
     class Conexao extends PDO {
         private static $instancia;
      
         public function Conexao($dsn, $username = "", $password = "") {
-            // O construtro abaixo é o do PDO
+            // O construtro abaixo Ã© o do PDO
             parent::__construct($dsn, $username, $password);
         }
      
